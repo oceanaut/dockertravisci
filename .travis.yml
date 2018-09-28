@@ -1,3 +1,13 @@
 ---
 language: python
 services: docker
+
+install:
+  # Install test dependencies.
+  - pip install  docker
+  
+before_install:
+ - docker run hello-world
+
+script:
+  - docker image ls
