@@ -3,8 +3,6 @@ sudo: required
 services:
   - docker
 
-language: python
-
 before_install:
   - docker pull hello-world
   - docker ps
